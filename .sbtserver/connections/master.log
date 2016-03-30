@@ -1,0 +1,30 @@
+New log file opened at Wed Mar 30 15:37:58 CST 2016 by 14652@yanzy
+Taking next connection to: 64941
+New client attempting to connect on port: 64942-64941
+  Address = /192.168.0.114:64941
+Handshake exception on socket: 64942
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 64941
+New client attempting to connect on port: 64943-64941
+  Address = /192.168.0.114:64941
+This client on port 64943 has uuid f5badfc5-dae3-4652-b431-f77afdb0f4e2 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-f5badfc5-dae3-4652-b431-f77afdb0f4e2
+Taking next connection to: 64941
+New client attempting to connect on port: 64944-64941
+  Address = /192.168.0.114:64941
+This client on port 64944 has uuid 25234ea1-a55e-4060-930a-6245ea95e719 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-f5badfc5-dae3-4652-b431-f77afdb0f4e2, activator-25234ea1-a55e-4060-930a-6245ea95e719
+Taking next connection to: 64941
